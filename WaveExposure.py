@@ -242,15 +242,15 @@ def main():
 
     exposure = WaveExposure()
 
-    exposure.setSourceFile('/home/kleinermann/Downloads/Vaestervik.shp')#dirk/gis/islands.shp')
+    exposure.setSourceFile('gis/Vaestervik.shp')#dirk/gis/islands.shp')
 
     exposure.setFilter('visited = 1')
 
     exposure.startExposureCalculation()
 
-    exposure.savePointLayer('/home/kleinermann/workspace/dirk/gis/points.shp')
+    exposure.savePointLayer('gis/points.shp')
 
-    exposure.saveMultiLineLayer('/home/kleinermann/workspace/dirk/gis/multi.shp')
+    exposure.saveMultiLineLayer('gis/multi.shp')
     
     #for key, point in visitedGeomDict.items():
     #   print('x: %f   y: %f' % (point.x,point.y))
